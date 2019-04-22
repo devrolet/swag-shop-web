@@ -1,5 +1,5 @@
 .App {
-  text-align: left;
+  text-align: center;
 }
 
 .App-logo {
@@ -21,6 +21,10 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.App-main {
+  padding: 35px;
 }
 
 @keyframes App-logo-spin {
