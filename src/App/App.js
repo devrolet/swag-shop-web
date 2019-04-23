@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
-import Product from '../Product/Product';
 
+// Components
+import Product from '../Product/Product';
+import Wishlist from '../Wishlist/Wishlist';
+
+// Services
 import HttpService from '../services/http.service';
 
 const http = new HttpService();
@@ -42,19 +46,21 @@ class App extends Component {
 
   render() {
     return (
-      // <div className="App">
-      //   <header className="App-header">
-      //     <img src={logo} className="App-logo" alt="logo" />
-      //     <p>
-      //       Welcome to the Swag Shop
-      //     </p>
-      //   </header>
-      // </div>
-      <div className="container App-main">
-        <div className="row">
-          {this.productList()}
+      <div className="App">
+        <div className="container-fluid App-main">
+          <div className="row">
+            <div className="col-md-8">
+              <div className="row">
+                {this.productList()}
+              </div>
+            </div>
+            <div className="col-md-4">
+              <Wishlist />
+            </div>
+          </div>
         </div>
       </div>
+      
     );
   }
 }
