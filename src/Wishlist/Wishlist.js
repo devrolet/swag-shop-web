@@ -3,6 +3,9 @@ import './Wishlist.css';
 
 import ProductCondensed from '../ProductCondensed/ProductCondensed';
 
+import DataService from '../services/data.service';
+import NotificationService from '../services/notification.service';
+
 class Wishlist extends Component {
     
     constructor(props) {
